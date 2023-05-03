@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.container{
+  width: 100%;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.exreport{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  margin: 20px;
+  justify-content:space-around;
+  background-color: blanchedalmond;
+}
+.newcat{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content:space-around;
+  background-color: #f8ab8f;
+  padding: 5px;
+}
+.spent{
+  background-color: rgb(227, 236, 236);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+.gtotal{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: blanchedalmond;
+    color: #db3e3e;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.reportbtn{
+  width: 100vw;
+  padding:5px;
+  margin-bottom: 10px;
+}
+.nums{
+  color: rgb(255 255 255);
+  margin-right: 10px;
+  margin-left: 2px;
+  background: coral;
+}
+.space{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content:space-around;
+}
+.spacered{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content:space-around;
+  background-color: blanchedalmond;
+  color: black;
+  padding: 5px;
+}
+button{
+  background-color: rgb(219, 232, 96);
+  padding: 5px;
+  border-radius: 5px;
+}
+.title{
+  background-color: rgb(219, 232, 96);
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.balance{
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  background-color: rgb(42, 102, 154);
+  height: 30px;
+  align-items: center;
+}
+input{
+  width:70px;
 }
 
+.qconvert{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  justify-content:space-around;
+  background-color: blanchedalmond;
+  padding: 4px;
+}
+.breakdown > input:nth-child(2n+0){
+  width:40px;
+}
+.breakdown > input:nth-child(3n-0){
+  width:40px;
+}
+.breakdown > input:nth-child(4n-0){
+  width:90px;
+}
+.breakdown > input:nth-child(5n-0){
+  width:40px;
+}
+.status{
+  background-color: #db3e3e;
+  padding: 5px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (portrait: landscape) {
+  .breakdown > input:nth-child(2n+0){
+    width:45px;
   }
 }
